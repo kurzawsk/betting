@@ -1,0 +1,42 @@
+
+.ui-jqgrid tr.jqgrow td {
+    white-space: nowrap;
+}
+
+th.ui-th-column div {
+    white-space: normal !important;
+    height: auto !important;
+    padding: 2px;
+}
+
+.matchBetRowClass {
+    color: #0080FF;
+    background-image: none;
+}
+
+.matchWithDrawnRowClass {
+    color: #2E2E2E;
+    background-image: none;
+}
+
+.betSuccessfulRowClass {
+    color: #04B404;
+    background-image: none;
+}
+
+.betunsuccessfulRowClass {
+    color: #8B0000;
+    background-image: none;
+}
+
+.moneyWithdrawnRowClass {
+    color: #00FF00;
+    background-image: none;
+}
+
+.moneyAddedRowClass {
+    color: #FF0000;
+    background-image: none;
+}
+
+

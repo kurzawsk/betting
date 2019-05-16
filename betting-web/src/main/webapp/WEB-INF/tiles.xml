@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<definition name="base.definition"
+		template="/WEB-INF/jsp/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/jsp/header.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/jsp/menu.jsp" />
+		<put-attribute name="body" value="" />
+		<put-list-attribute name="stylesheets">
+			<add-attribute value="/resources/css/main.css" />
+		</put-list-attribute>
+	</definition>
+
+	<definition name="main" extends="base.definition">
+		<put-attribute name="title" value="Betting Main Page" />
+		<put-attribute name="body" value="/WEB-INF/jsp/main.jsp" />
+	</definition>
+
+	<definition name="match" extends="base.definition">
+		<put-attribute name="title" value="Match Page" />
+		<put-attribute name="body" value="/WEB-INF/jsp/match.jsp" />
+	</definition>
+
+	<definition name="bettors" extends="base.definition">
+		<put-attribute name="title" value="Bettor Page" />
+		<put-attribute name="body" value="/WEB-INF/jsp/bettors.jsp" />
+	</definition>
+
+	<definition name="statistics" extends="base.definition">
+		<put-attribute name="title" value="Statistics Page" />
+		<put-attribute name="body" value="/WEB-INF/jsp/statistics.jsp" />
+	</definition>
+
+	<definition name="proposed-match-mappings" extends="base.definition">
+		<put-attribute name="title" value="Proposed Match Mappings" />
+		<put-attribute name="body" value="/WEB-INF/jsp/proposedMatchMappings.jsp" />
+	</definition>
+
+	<definition name="admin" extends="base.definition">
+		<put-attribute name="title" value="Admin Page" />
+		<put-attribute name="body" value="/WEB-INF/jsp/admin.jsp" />
+	</definition>
+
+</tiles-definitions>

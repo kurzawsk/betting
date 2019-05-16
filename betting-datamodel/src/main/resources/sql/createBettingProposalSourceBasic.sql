@@ -1,0 +1,2 @@
+INSERT INTO public.betting_proposal_source (id, is_active, logic_imp_class , schedule_expression) VALUES (1, true, 'com.kk.betting.services.bettorhandling.pinnacledummy.service.ProposeAllPinnacleMatchesLogic', 'MINUTE=30;HOUR=4,12,20');
+INSERT INTO public.betting_proposal_source (id, is_active, logic_imp_class, schedule_expression) VALUES (2, true, 'com.kk.betting.services.bettorhandling.typersi.service.TypersiLogic', 'MINUTE=45;HOUR=3,7,11,15,19,23');
